@@ -1,8 +1,10 @@
-function Button(){
+function Button(props){
+    // console.log(text,fn)
     return (
-       <button className = "bg-blue-500 rounded-lg py-2 px-5 text-xl hover:bg-blue-700">
-        login
-       </button>
+       <button onClick={props.fn} className = {`text-red-500 rounded-lg py-2 px-5 text-xl  " ${props.value}`}
+        >
+        {props.text}
+       </button> 
     )
 }
 export default Button;

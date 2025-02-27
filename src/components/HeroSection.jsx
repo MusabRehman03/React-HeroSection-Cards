@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 function HeroSection({x}) {
-    console.log(x)
+
   return (
     
     <div className='bg-gray-700 w-full flex flex-col h-[86vh]'>

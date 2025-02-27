@@ -1,28 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import MyButton from './components/MyButton'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import HeroSection from './components/HeroSection'
 
+import {Routes,Route} from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Tabs from './components/Tabs'
+import Form from './components/Form'
 function App() {
-  // const [count, setCount] = useState(0)
-  let props = [{
-    name : "musab",
-    age : 20
-  },
-   { name : "ali",
-  age : 30},
-  { name : "ahmad",
-    age : 35}
-]
+
   return (
     <>
-      <Navbar />
-      <HeroSection x={props}/>
-      <Footer/>
+      {/* <Navbar />
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/Home' element={<Home/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
+          <Route path='*' element={<Error/>}/>
+        </Routes>
+      <Footer/> */}
+      <Tabs/>
+      {/* <Form/> */}
   </>
   )
 }
