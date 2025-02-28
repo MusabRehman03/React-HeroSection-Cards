@@ -23,8 +23,8 @@ function App() {
           <Route path='*' element={<Error/>}/>
         </Routes>
       <Footer/> */}
-      <Tabs/>
-      {/* <Form/> */}
+      {/* <Tabs/> */}
+      <Form/>
   </>
   )
 }
